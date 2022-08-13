@@ -10,10 +10,12 @@ package model;
  */
 public class ContaCorrente extends Conta {
 
-    public ContaCorrente( Cliente titular, double saldo) {
-        super(titular, saldo);
+    public ContaCorrente( Cliente titular, double saldo,int count) {
+        super(titular, saldo ,count);
+        cadastrarTipo();
         //TODO Auto-generated constructor stub
     }
+    
     private void cadastrarTipo(){
         super.setTipo("cc");
     }

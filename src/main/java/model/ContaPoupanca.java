@@ -11,8 +11,9 @@ package model;
 public class ContaPoupanca extends Conta {
 
     
-    public ContaPoupanca(Cliente titular, double saldo) {
-        super(titular, saldo);
+    public ContaPoupanca(Cliente titular, double saldo,int count) {
+        super(titular, saldo,count);
+        cadastrarTipo();
         //TODO Auto-generated constructor stub
     }
     

@@ -4,6 +4,8 @@
  */
 package model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author iuryi
@@ -13,15 +15,14 @@ public class Conta {
 	
 	int numero;
 	Cliente titular;
-        double  Saldo; 
-        private int count = 1;
+        double  Saldo;
         private String tipo;	
 	
-	public Conta(Cliente titular, Double Saldo) {
+	public Conta(Cliente titular, Double Saldo,int count) {
 		super();
 		this.titular = titular;
                 this.Saldo = Saldo;
-                setNumero();
+                setNumero(++count);
 	}
 
     public Conta() {}
@@ -30,9 +31,8 @@ public class Conta {
         return numero;
     }
 
-    private void setNumero() {
+    private void setNumero(int count) {
         this.numero = count;
-        count++;
     }
 
     public Cliente getTitular() {

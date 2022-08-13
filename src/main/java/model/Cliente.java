@@ -72,7 +72,7 @@ public class Cliente {
         this.Endereco = Endereco;
     }
 
-    private ArrayList<Conta> getContas() {
+    public ArrayList<Conta> getContas() { ///alterei de private pra public
         return Contas;
     }
     
